@@ -51,6 +51,7 @@ redisModule.init = function (callback) {
 		require('./redis/sorted')(redisClient, redisModule);
 		require('./redis/list')(redisClient, redisModule);
 		require('./redis/pubsub')(redisClient, redisModule);
+		require('./redis/transaction')(redisClient, redisModule);
 
 		callback();
 	});

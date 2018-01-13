@@ -123,6 +123,7 @@ mongoModule.init = function (callback) {
 		require('./mongo/sorted')(db, mongoModule);
 		require('./mongo/list')(db, mongoModule);
 		require('./mongo/pubsub')(db, mongoModule);
+		require('./mongo/transaction')(db, mongoModule);
 		callback();
 	});
 };
